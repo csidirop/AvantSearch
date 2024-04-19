@@ -52,7 +52,7 @@ $optionSelectorsHtml .= $searchResults->emitSelectorForView();
 $optionSelectorsHtml .= $searchResults->emitSelectorForLayout($layoutsData);
 $optionSelectorsHtml .= $searchResults->emitSelectorForSort();
 $optionSelectorsHtml .= $searchResults->emitSelectorForLimit();
-$optionSelectorsHtml .= $searchResults->emitSelectorForFilter();
+// $optionSelectorsHtml .= $searchResults->emitSelectorForFilter();
 
 echo head(array('title' => $resultsMessage));
 echo "<div id='{$searchResults->getSearchResultsContainerName()}'>";

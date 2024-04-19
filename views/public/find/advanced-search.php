@@ -310,7 +310,7 @@ echo "<div><h1>$pageTitle $siteBeingSearched</h1></div>";
     function disableEmptyField(selector)
     {
         var field = jQuery(selector);
-        var fieldExists = field.size() > 0;
+        var fieldExists = field && field.length > 0;
         if (fieldExists && field.val().trim().length === 0)
         {
             field.prop("disabled", true);

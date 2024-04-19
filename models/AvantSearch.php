@@ -267,11 +267,11 @@ class AvantSearch
 //        $html .= '<a href="https://digitalarchive.us" target="_blank" title="' . __('Read the documentation in a separate window') . '" >' . __('Help') . '</a>';
 
         // Emit the Advanced Search link.
-        $advancedSearchLinkText = __('Advanced Search');
-        if (!$isAdvancedSearchPage)
-            $html .= '<a href="' . $advancedSearchUrl . '" class="search-link" title="' . __('Go to the Advanced Search page') . '">' . $advancedSearchLinkText . '</a>';
-        else
-            $html .= '<span id="advanced-search-link-disabled">' . $advancedSearchLinkText . '</span>';
+//        $advancedSearchLinkText = __('Advanced Search');
+//        if (!$isAdvancedSearchPage)
+//            $html .= '<a href="' . $advancedSearchUrl . '" class="search-link" title="' . __('Go to the Advanced Search page') . '">' . $advancedSearchLinkText . '</a>';
+//        else
+//            $html .= '<span id="advanced-search-link-disabled">' . $advancedSearchLinkText . '</span>';
 
         $html .= '</div>';
         $html .= '</form>';

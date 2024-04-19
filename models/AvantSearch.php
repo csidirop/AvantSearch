@@ -219,6 +219,8 @@ class AvantSearch
         $queryString = empty($_SERVER['QUERY_STRING']) ? '' : '?' . $_SERVER['QUERY_STRING'];
         $advancedSearchUrl = url('/find/advanced') . $queryString;
 
+        $layoutId = 2; // which layout to use when rendering search results
+
         if (self::useElasticsearch())
         {
             // Switch to table view whenever doing a new search from the search form. This is done so
@@ -240,6 +242,7 @@ class AvantSearch
         $html .= '<form id="search-form" name="search-form" action="' . $findUrl . '" method="get" class="search-form">';
         $html .= '<span class="search-erase">';
         $html .= '<input id="query" type="text" name="query" value="' . $query . '" title="Search" autofocus placeholder="' . $placeholderText . '">';
+        $html .= '<input type="hidden" id="layoutId" name="layout" value="' . $layoutId . '">';
 
         // Emit the hidden <input> tags needed to put query string argument values into the form.
         $html .= self::getHiddenInputsForSimpleSearch();

@@ -261,10 +261,10 @@ class AvantSearch
         $html .= '<div id="banner-links">';
 
         // Emit the recent items and help links
-        $flaggedItemsTooltip = AvantCommon::getCustomText('flagged_items_tooltip', __('See your flagged items'));
-        $flaggedItemsLinkText = AvantCommon::getCustomText('flagged_items_link_text', __('Flagged Items'));
-        $html .= '<a href="' . public_url('/avant/recent') . '" title="' . $flaggedItemsTooltip . '">' . $flaggedItemsLinkText . '</a>';
-        $html .= '<a href="https://digitalarchive.us" target="_blank" title="' . __('Read the documentation in a separate window') . '" >' . __('Help') . '</a>';
+//        $flaggedItemsTooltip = AvantCommon::getCustomText('flagged_items_tooltip', __('See your flagged items'));
+//        $flaggedItemsLinkText = AvantCommon::getCustomText('flagged_items_link_text', __('Flagged Items'));
+//        $html .= '<a href="' . public_url('/avant/recent') . '" title="' . $flaggedItemsTooltip . '">' . $flaggedItemsLinkText . '</a>';
+//        $html .= '<a href="https://digitalarchive.us" target="_blank" title="' . __('Read the documentation in a separate window') . '" >' . __('Help') . '</a>';
 
         // Emit the Advanced Search link.
         $advancedSearchLinkText = __('Advanced Search');

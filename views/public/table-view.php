@@ -62,7 +62,7 @@ echo "<div id='search-results-title'><span>$resultsMessage</span>$paginationLink
 
 echo $searchResults->emitSearchFilters($optionSelectorsHtml, $totalResults > 0);
 ?>
-
+<?php include 'find/avantsearch-container.php'; ?>
 <?php if ($totalResults): ?>
     <?php if ($useElasticsearch): ?>
         <?php

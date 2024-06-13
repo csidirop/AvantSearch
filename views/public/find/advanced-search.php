@@ -124,8 +124,6 @@ $showTitlesOption = get_option(SearchConfig::OPTION_TITLES_ONLY) == true;
 
 $pageTitle = __('Advanced Search');
 
-$layoutId = 2;
-
 echo head(array('title' => $pageTitle, 'bodyclass' => 'avantsearch-advanced'));
 echo "<div><h1>$pageTitle $siteBeingSearched</h1></div>";
 ?>
@@ -137,7 +135,6 @@ echo "<div><h1>$pageTitle $siteBeingSearched</h1></div>";
         </div>
         <form <?php echo tag_attributes($advancedFormAttributes); ?>>
             <div id="search-button" class="panel">
-                <input type="hidden" id="layoutId" name="layout" value="<?php echo $layoutId; ?>">
                 <input type="submit" class="submit button" value="<?php echo $advancedSubmitButtonText; ?>">
                 <!-- Emit the hidden <input> tags needed to put query string argument values into the form. -->
                 <?php echo AvantSearch::getHiddenInputsForAdvancedSearch() ?>

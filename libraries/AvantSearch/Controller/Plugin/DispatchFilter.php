@@ -10,6 +10,7 @@ class AvantSearch_Controller_Plugin_DispatchFilter extends Zend_Controller_Plugi
 
         $moduleName = $request->getModuleName();
         $controllerName = $request->getControllerName();
+        if ($request->getParam('collection', false)) return; // Do not use on collections
         $actionName = $request->getActionName();
         $this->bypassOmekaSearch($request, $moduleName, $controllerName, $actionName);
     }

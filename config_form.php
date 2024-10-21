@@ -58,6 +58,17 @@ if (AvantSearch::usePdfSearch())
 
 <div class="field">
     <div class="two columns alpha">
+        <label><?php echo CONFIG_LABEL_SEARCHBAR_ON_RESULTS; ?></label>
+    </div>
+    <div class="inputs five columns omega">
+        <p class="explanation"><?php echo __('Adds an additional searchbar at the results page'); ?></p>
+        <?php echo $view->formCheckbox(SearchConfig::OPTION_SEARCHBAR_ON_RESULTS, true, array('checked' => (boolean)get_option(SearchConfig::OPTION_SEARCHBAR_ON_RESULTS))); ?>
+    </div>
+</div>
+
+
+<div class="field">
+    <div class="two columns alpha">
         <label><?php echo CONFIG_LABEL_COLUMNS; ?></label>
     </div>
     <div class="inputs five columns omega">
@@ -133,8 +144,5 @@ if (AvantSearch::usePdfSearch())
         <?php endif; ?>
     </div>
 </div>
-
-
-
 
 

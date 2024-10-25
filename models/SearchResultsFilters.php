@@ -22,7 +22,7 @@ class SearchResultsFilters
     {
         $link = AvantSearch::getSearchFilterResetLink($resetUrl);
         $facetClass = $isFacet ? ' search-facet' : '';
-        $this->filterMessageHtml .= "<span class='search-filter$facetClass'>$filter$link</span>";
+        $this->filterMessageHtml .= "<span class='search-filter$facetClass' contenteditable='true' spellcheck='false'>$filter$link</span>";
         $this->filterMessageText .= $filter . PHP_EOL;
         $this->filterCount++;
     }
